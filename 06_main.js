@@ -17,6 +17,7 @@ $("document").ready(function() {
         views_seq: [
             intro,
             instructions_custom,
+            consent,
             slider_rating_custom,
             post_test,
             thanks,
@@ -24,11 +25,11 @@ $("document").ready(function() {
         // Here, you can specify all information for the deployment
         deploy: {
             experimentID: "1",
-            serverAppURL: "ftp://ftp.raumopol.de/appliedstatisticsforlinguists.org/",
+            serverAppURL: "https://appliedstatisticsforlinguists.org/",
             // Possible deployment methods are:
             // "debug" and "directLink"
             // As well as "MTurk", "MTurkSandbox" and "Prolific"
-            deployMethod: "directLink",
+            deployMethod: "debug",
             contact_email: "v.macuchsilva@bham.ac.uk",
             prolificURL: "https://app.prolific.ac/submissions/complete?cc=SAMPLE1234"
         },

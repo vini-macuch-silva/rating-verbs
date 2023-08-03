@@ -23,11 +23,34 @@ const intro = magpieViews.view_generator("intro", {
   trials: 1,
   name: 'intro',
   // If you use JavaScripts Template String `I am a Template String`, you can use HTML <></> and javascript ${} inside
-  text: `In this task you will be asked to think about the meaning of different verbs and to give a judgement on it. The task should take no longer than 5 minutes to complete.
+  text: `In this task you will be asked to think about the meaning of different verbs. It should take no longer than 5 minutes to complete.
             <br />
             <br />
             If you are ready to read the instructions, please go ahead and click the button below.`,
   buttonText: 'begin the experiment'
+});
+
+
+const consent = magpieViews.view_generator("instructions", {
+  trials: 1,
+  name: 'consent',
+  title: 'Informed consent',
+  text: ` <ul>
+            <li>I confirm that the purpose of the study has been explained and that I have understood it.</li>
+            <br />
+            <br />
+            <li>I understand that my participation in this study is voluntary and that I am free to withdraw from the study at any time until submission of the form, without giving a reason and without consequence.</li>
+            <br />
+            <br />
+            <li>I understand that data will be identifiable only via the Prolific ID, which will not be shared with any published data. I understand that all published data will be treated as confidential and anonymised.</li>
+            <br />
+            <br />
+            <li>I understand that there are no known risks or hazards associated with participating in this study.</li>
+            </ul>
+            <br />
+            <br />
+            By pressing the arrow to proceed to the next screen, you are electronically signing the consent form, thereby confirming that you have read and understood the above information and that you agree to participate in the study.`,
+  buttonText: 'go to trials'
 });
 
 // For most tasks, you need instructions views
@@ -35,11 +58,14 @@ const instructions_custom = magpieViews.view_generator("instructions", {
   trials: 1,
   name: 'instructions',
   title: 'Instructions',
-  text: `Each trial, you will be asked to think about the meaning of a verb relating to change. Your task is to rate how much the verb relates to the two changes depicted by the pictures displayed on the screen, as shown below. In order to do that, you will be given a sliding button which you can click on and drag towards either of the pictures to indicate your judgement.
+  text: `This study is about verbs that describe changes, such as the verb <b>to decrease</b>. Your task is to rate how much the verb relates to the two changes depicted by the pictures displayed on the screen, as shown below. The picture on the left depicts a change in size. The picture on the right depicts a change in vertical position. You can drag the slider towards either of the pictures to indicate which type of change is a better fit for the verb in question.
             <br />
             <br />
-            For instance, you will see the verb '<b>to decrease</b>' and decide whether it relates more to the picture on the left, depicting a change in size, or the picture on the right, depicting a change in vertical position. If you think the verb doesn't relate particularly well to either, or if you think it relates equally to both, you can leave the slider right in between both pictures.`,
-  buttonText: 'go to trials',
+            If you think the verb doesn't relate particularly well to either type of change, or if you think it relates equally to both, you can leave the slider right in between both pictures.
+            <br />
+            <br />
+            There is no right or wrong in this task. We ask you to follow your intuition.`,
+  buttonText: 'go to consent',
   picture: 'images/instructions_view.png'
 },
 {
