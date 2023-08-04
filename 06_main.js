@@ -25,7 +25,7 @@ $("document").ready(function() {
         // Here, you can specify all information for the deployment
         deploy: {
             experimentID: "5",
-            serverAppURL: "https://magpie-cogsciprag.fly.dev/experiments/",
+            serverAppURL: "https://magpie-cogsciprag.fly.dev/api/submit_experiment/",
             // Possible deployment methods are:
             // "debug" and "directLink"
             // As well as "MTurk", "MTurkSandbox" and "Prolific"
