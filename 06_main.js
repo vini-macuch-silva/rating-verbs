@@ -24,12 +24,12 @@ $("document").ready(function() {
         ],
         // Here, you can specify all information for the deployment
         deploy: {
-            experimentID: "1",
-            serverAppURL: "https://appliedstatisticsforlinguists.org/",
+            experimentID: "5",
+            serverAppURL: "https://magpie-cogsciprag.fly.dev/experiments/",
             // Possible deployment methods are:
             // "debug" and "directLink"
             // As well as "MTurk", "MTurkSandbox" and "Prolific"
-            deployMethod: "debug",
+            deployMethod: "directLink",
             contact_email: "v.macuchsilva@bham.ac.uk",
             prolificURL: "https://app.prolific.ac/submissions/complete?cc=SAMPLE1234"
         },
